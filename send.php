@@ -27,6 +27,6 @@
   if ($result === false) {
     echo 'Error sending message to Telegram bot';
   } else {
-    echo "1";
+    header("Location: https://google.com");
   }
 ?>
